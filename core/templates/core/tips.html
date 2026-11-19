@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% block content %}
+
+<h1>Cyber Safety Guidelines</h1>
+<p>Practical steps to protect your digital information.</p>
+
+{% for tip in tips %}
+<div class="tip-card">
+    <h2>{{ tip.title }}</h2>
+    <p>ID: {{ tip.id }}</p>
+    <p>Category: {{ tip.category }}</p>
+    <p>{{ tip.detail }}</p>
+</div>
+{% empty %}
+<p>No safety tips available.</p>
+{% endfor %}
+
+{% endblock %}

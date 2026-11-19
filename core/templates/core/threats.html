@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% block content %}
+
+<h1>Common Cyber Threats</h1>
+<p>Recognize common online attacks and understand how they affect you.</p>
+
+{% for threat in threats %}
+<div class="threat-card">
+    <h2>{{ threat.name }}</h2>
+    <p>ID: {{ threat.id }}</p>
+    <p>Category: {{ threat.category }}</p>
+    <p>Severity: {{ threat.severity }}</p>
+    <p>{{ threat.description }}</p>
+    <p>Protection: {{ threat.protection }}</p>
+</div>
+{% empty %}
+<p>No threat data available.</p>
+{% endfor %}
+
+{% endblock %}
