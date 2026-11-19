@@ -1,9 +1,8 @@
 # H-ai-Safe
 ## Cybersecurity Awareness Web Application
 
-**Course:** CGC 5003 – Application Programming  
-**Project:** Project 2 – Phase 1  
-**Semester:** Fall 2026
+CGC 5003 – Application Programming  
+Project 2 – Phase 1 / Nov 2026
 
 ## 1. Project Overview
 H-ai-Safe is a Django-based educational web application designed to improve cybersecurity awareness. It helps users recognize common cyber threats and understand practical ways to protect their digital information.
